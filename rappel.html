@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h2>TOUS CE QU'IL FAUT SAVOIR A PROPOS D'UN FORMULAIRE</h2>
+    </center>
+    <form action="">
+        <fieldset>
+            <legend>IDENTITE</legend>
+            <p> <label for="lastname">Nom :</label><input type="text" name="f_lastname"  required> 
+            <label for="firstname">Prénom :</label><input type="text" name="f_firstname"  required></p>
+            <p> <label for="gender">Sexe :</label> 
+            <input type="radio" name="f_gender" id="M" value="M" required><label for="M">HOMME</label>
+            <input type="radio" name="f_gender" id="F" value="F" required><label for="F">FEMME</label></p>
+        </fieldset>
+
+        <fieldset>
+            <legend>LOCALISATION ET COORDONNEE</legend>
+            <p><label for="city">Ville :</label> <input type="number" name="f_city" required></p>
+            <p><label for="adress">Adresse :</label><input type="text" name="f_adress" required> </p>
+            <p><label for="code">Code postal :</label> <input type="text" maxlength="6" name="f_code" required></p>
+            <p><label for="num">Numéro de téléphone :</label> <input type="tel" name="f_num" required></p>
+        </fieldset>
+
+        <fieldset>
+            <legend>DATE ET LIEU  DE NAISSANCE</legend>
+            <p> <label for="birthday"> Date de naissance :</label> <input type="date" name="f_birthday" required> 
+            <label for="birthlocation">Lieu de naissance :</label> <input type="text" name="f_birthlocation" required></p>
+        </fieldset>
+
+        <fieldset>
+            <legend>AUTRES..</legend>
+            <p><label for="infos">Informations supplémentaires :</label><br> <textarea name="f_infos" id="infos" cols="30" rows="10"></textarea></p> 
+        </fieldset>        
+        
+        <p><input type="submit" name="Enrégistrer"> </p>
+    </form>
+</body>
+</html>
